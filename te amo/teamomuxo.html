@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Para ti 🌻</title>
+
+    <!-- Tipografías (si no hay internet, se usa Georgia y una letra cursiva del sistema) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500;1,9..144,600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="a.css">
+</head>
+
+<body>
+
+    <!-- FONDO -->
+    <div class="background"></div>
+
+    <!-- PÉTALOS -->
+    <div class="petals" aria-hidden="true"></div>
+
+
+    <!-- INICIO -->
+    <main class="inicio" id="inicio">
+
+        <div class="contenido">
+
+            <div class="hero-flor" id="heroFlor" data-girasol="anim" aria-hidden="true"></div>
+
+            <h1>Para ti</h1>
+
+            <p>Hay algo que quería regalarte...</p>
+
+            <button class="btn" id="abrir" type="button">
+                🌻 Abrir mi regalo 🌻
+            </button>
+
+        </div>
+
+    </main>
+
+
+    <!-- CARTA -->
+   <section class="carta oculto" id="carta">
+
+    <article class="papel">
+
+        <div class="sello" data-girasol data-seeds="90" aria-hidden="true"></div>
+
+        <h2 class="aparece">Mi niña preciosa 💛</h2>
+
+        <p class="aparece">
+            Mi tesoro, soy muy afortunado de haberte conocido aquel día.
+            Siempre sentí una conexión entre nosotros, no sabría cómo explicarlo
+            con palabras, pero sí con un sentimiento. Era algo que sentía que iba
+            incluso más allá del amor, como si de alguna manera estuviéramos
+            destinados a encontrarnos, como si nuestras almas ya estuvieran
+            conectadas antes de conocernos. Y puedo asegurarte que hasta el día
+            de hoy lo siento como la primera vez.
+        </p>
+
+        <p class="aparece">
+            Aunque tengamos discusiones o días en los que no nos entendamos,
+            siempre te escogeré a ti, cada día de mi vida. Amo todo lo que hemos
+            vivido juntos, amo tus locuras, amo la manera en que haces las cosas,
+            amo tu manera de ser, amo todo lo que eres. Y todo eso es lo que me
+            hace sentir orgulloso de ti cada día.
+        </p>
+
+        <p class="especial aparece">
+            Y para mí, esa persona eres tú. 💛
+        </p>
+
+        <div class="separador aparece" aria-hidden="true">🌻</div>
+
+        <p class="frase aparece">
+            “Si pudiera regalarte una flor por cada vez
+            que pienso en ti, tendrías un universo entero
+            y a la vez solo 1.”
+        </p>
+
+        <p class="aparece">
+            Te adoro muchísimo, mi niña hermosa.
+            Te amo. 💛
+        </p>
+
+        <p class="firma aparece">
+            Con todo mi amor,
+            <span id="firmaNombre">Luis</span>
+        </p>
+
+        <button class="btn aparece" id="verFotos" type="button">
+            Mira lo que guardé 📸
+        </button>
+
+    </article>
+
+</section>
+
+
+    <!-- GALERÍA -->
+    <!--
+        FOTOS: están en la carpeta img/ (1.png, 2.png, 3.png, 4.png).
+        Cambia el texto de cada <figcaption> y el "alt" por lo que quieras decir.
+        --giro es la inclinación de cada foto (puedes cambiarla).
+    -->
+    <section class="galeria oculto" id="galeria">
+
+        <h2 class="aparece">Nuestros momentos</h2>
+        <p class="sub aparece">Toca una foto para verla grande.</p>
+
+        <div class="polaroids aparece">
+
+            <figure class="polaroid" style="--giro:-3deg">
+                <button class="foto" type="button" data-archivo="img/1.png">
+                    <img src="img/1.png" alt="Foto 1 de nosotros" loading="lazy">
+                </button>
+                <figcaption>Nuestros primeros momentos juntos</figcaption>
+            </figure>
+
+            <figure class="polaroid" style="--giro:2.5deg">
+                <button class="foto" type="button" data-archivo="img/2.png">
+                    <img src="img/2.png" alt="Foto 2 de nosotros" loading="lazy">
+                </button>
+                <figcaption>Nuestra primera foto juntos</figcaption>
+            </figure>
+
+            <figure class="polaroid" style="--giro:-1.5deg">
+                <button class="foto" type="button" data-archivo="img/3.png">
+                    <img src="img/3.png" alt="Foto 3 de nosotros" loading="lazy">
+                </button>
+                <figcaption>Nuestros últimos momentos juntos</figcaption>
+            </figure>
+
+            <figure class="polaroid" style="--giro:3deg">
+                <button class="foto" type="button" data-archivo="img/4.png">
+                    <img src="img/4.png" alt="Foto 4 de nosotros" loading="lazy">
+                </button>
+                <figcaption>Nuestra última foto juntos</figcaption>
+            </figure>
+
+                        <figure class="polaroid" style="--giro:-2deg">
+                <button class="foto" type="button" data-archivo="img/5.png">
+                    <img src="img/5.png" alt="Foto 5 de nosotros" loading="lazy">
+                </button>
+                <figcaption>Hace un momento <3 </figcaption>
+            </figure>
+
+        </div>
+
+        <button class="btn aparece" id="continuar" type="button">
+            Hay algo más... 💛
+        </button>
+
+    </section>
+
+
+    <!-- FINAL -->
+    <section class="final oculto" id="final">
+
+        <div class="jardin">
+
+            <h2 class="aparece">Te amo muchísimo</h2>
+
+            <p class="aparece">
+                Y espero que nunca olvides lo especial que eres para mí.
+            </p>
+
+            <p class="contador aparece oculto" id="contador"></p>
+
+            <div class="corazon aparece" aria-hidden="true">💛</div>
+
+            <p class="siempre aparece">Siempre tú.</p>
+
+            <button class="enlace aparece" id="volver" type="button">
+                Volver al inicio
+            </button>
+
+        </div>
+
+        <div class="campo" id="campo" aria-hidden="true"></div>
+        <div class="suelo"></div>
+
+    </section>
+
+    <!-- MÚSICA -->
+    <audio id="musica" src="audio/quimica-mayor.mp3" loop preload="auto"></audio>
+
+    <button class="musica oculto" id="btnMusica" type="button" aria-label="Pausar música" aria-pressed="true">🎵</button>
+    <!-- VISOR DE FOTO -->
+    <div class="visor oculto" id="visor" role="dialog" aria-modal="true" aria-label="Foto ampliada">
+        <button class="cerrar" type="button" aria-label="Cerrar foto">✕</button>
+        <figure>
+            <img src="" alt="">
+            <figcaption></figcaption>
+        </figure>
+    </div>
+
+
+    <script>
+
+        /* =====================================================
+           ✏️  PERSONALIZA AQUÍ
+           ===================================================== */
+        const CONFIG = {
+            // Tu nombre para la firma de la carta (déjalo "" para que diga "Yo")
+            tuNombre: "",
+
+            // Fecha en que empezaron, formato AAAA-MM-DD (ej: "2024-03-21").
+            // Si la dejas "" no se muestra el contador de días.
+            fechaInicio: ""
+        };
+        /* ===================================================== */
+
+
+        const $ = (sel) => document.querySelector(sel);
+        const reducirMovimiento = matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+
+        /* ---------- Girasol dibujado en SVG ---------- */
+
+        let uid = 0;
+
+        function girasol({ anim = false, seeds = 200 } = {}) {
+
+            const id = "gs" + (uid++);
+            const forma = "M0,-52 C22,-80 24,-130 0,-158 C-24,-130 -22,-80 0,-52 Z";
+
+            const capa = (n, offset, escala, tipo) => {
+                let s = "";
+                for (let i = 0; i < n; i++) {
+                    const ang = (360 / n) * i + offset;
+                    const retraso = anim ? ` style="--d:${tipo * 350 + i * 40}"` : "";
+                    s += `<g transform="rotate(${ang.toFixed(2)}) scale(${escala})">` +
+                         `<path class="p" d="${forma}" fill="url(#${id}${tipo})" ` +
+                         `stroke="#b97a00" stroke-opacity=".35" stroke-width="1.2"${retraso}/></g>`;
+                }
+                return s;
+            };
+
+            let semillas = "";
+            for (let i = 1; i <= seeds; i++) {
+                const r = 3.8 * Math.sqrt(i * 200 / seeds);
+                const a = i * 137.508 * Math.PI / 180;
+                semillas += `<circle cx="${(r * Math.cos(a)).toFixed(1)}" cy="${(r * Math.sin(a)).toFixed(1)}" ` +
+                            `r="${(1.3 + i / seeds * 1.4).toFixed(1)}" ` +
+                            `fill="${i % 3 ? "#2a1804" : "#9a6a1c"}" opacity=".85"/>`;
+            }
+
+            return `
+            <svg viewBox="-170 -170 340 340" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <defs>
+                    <linearGradient id="${id}0" gradientUnits="userSpaceOnUse" x1="0" y1="-160" x2="0" y2="-50">
+                        <stop offset="0" stop-color="#f0a800"/><stop offset="1" stop-color="#c98000"/>
+                    </linearGradient>
+                    <linearGradient id="${id}1" gradientUnits="userSpaceOnUse" x1="0" y1="-160" x2="0" y2="-50">
+                        <stop offset="0" stop-color="#ffe066"/><stop offset="1" stop-color="#f6b000"/>
+                    </linearGradient>
+                    <radialGradient id="${id}c">
+                        <stop offset="0" stop-color="#7a4a10"/><stop offset=".7" stop-color="#4a2c07"/><stop offset="1" stop-color="#2e1a03"/>
+                    </radialGradient>
+                </defs>
+                ${capa(22, 0, 1, 0)}
+                ${capa(22, 8.18, 0.9, 1)}
+                <circle r="57" fill="url(#${id}c)"/>
+                ${semillas}
+                <circle r="57" fill="none" stroke="#2e1a03" stroke-opacity=".5" stroke-width="3"/>
+            </svg>`;
+        }
+
+        document.querySelectorAll("[data-girasol]").forEach((el) => {
+            el.innerHTML = girasol({
+                anim: el.dataset.girasol === "anim",
+                seeds: Number(el.dataset.seeds) || 200
+            });
+        });
+
+
+        /* ---------- Pétalos que caen ---------- */
+
+        const contenedorPetalos = $(".petals");
+
+        if (!reducirMovimiento) {
+            for (let i = 0; i < 22; i++) {
+                const p = document.createElement("span");
+                const dur = 9 + Math.random() * 9;
+                const lado = Math.random() < 0.5 ? -1 : 1;
+                p.className = "petalo";
+                p.style.cssText =
+                    `left:${Math.random() * 100}%;` +
+                    `--w:${9 + Math.random() * 9}px;` +
+                    `--x:${(20 + Math.random() * 50) * lado}px;` +
+                    `--dur:${dur}s;` +
+                    `--del:${-Math.random() * dur}s;`;
+                contenedorPetalos.appendChild(p);
+            }
+        }
+
+
+        /* ---------- Campo de girasoles del final ---------- */
+
+        const campo = $("#campo");
+        const alturas = [70, 120, 90, 165, 110, 150, 80, 130, 95];
+        const tamanos = [64, 88, 72, 108, 80, 100, 66, 92, 70];
+
+        alturas.forEach((h, k) => {
+            const g = document.createElement("div");
+            g.className = "girasol";
+            g.style.cssText = `--h:${h}px;--s:${tamanos[k]}px;--k:${k};`;
+            g.innerHTML = `<div class="cabeza">${girasol({ seeds: 70 })}</div><div class="tallo"></div>`;
+            campo.appendChild(g);
+        });
+
+
+        /* ---------- Firma y contador de días ---------- */
+
+        if (CONFIG.tuNombre.trim()) {
+            $("#firmaNombre").textContent = CONFIG.tuNombre.trim();
+        }
+
+        if (CONFIG.fechaInicio) {
+            const inicio = new Date(CONFIG.fechaInicio + "T00:00:00");
+            const dias = Math.floor((Date.now() - inicio.getTime()) / 86400000);
+            if (!isNaN(dias) && dias >= 0) {
+                const c = $("#contador");
+                c.textContent = `Llevamos ${dias.toLocaleString("es")} ${dias === 1 ? "día" : "días"} juntos, y cuento cada uno.`;
+                c.classList.remove("oculto");
+            }
+        }
+
+
+        /* ---------- Mostrar secciones paso a paso ---------- */
+
+        // Orden de aparición de los elementos dentro de cada sección
+        document.querySelectorAll(".carta, .galeria, .final").forEach((sec) => {
+            sec.querySelectorAll(".aparece").forEach((el, i) => el.style.setProperty("--i", i));
+        });
+
+        function revelar(seccion) {
+            seccion.classList.remove("oculto");
+            void seccion.offsetWidth; // reinicia las animaciones
+            seccion.classList.add("mostrar");
+            setTimeout(() => {
+                seccion.scrollIntoView({
+                    behavior: reducirMovimiento ? "auto" : "smooth",
+                    block: "start"
+                });
+            }, 60);
+        }
+
+        $("#abrir").addEventListener("click", () => {
+            const flor = $("#heroFlor");
+            flor.classList.remove("florece");
+            void flor.offsetWidth;
+            flor.classList.add("florece");
+            revelar($("#carta"));
+        });
+
+        $("#verFotos").addEventListener("click", () => revelar($("#galeria")));
+        $("#continuar").addEventListener("click", () => revelar($("#final")));
+
+        $("#volver").addEventListener("click", () => {
+            window.scrollTo({ top: 0, behavior: reducirMovimiento ? "auto" : "smooth" });
+        });
+
+
+        /* ---------- Fotos: aviso si falta alguna + visor ---------- */
+
+        document.querySelectorAll(".foto").forEach((boton) => {
+            const img = boton.querySelector("img");
+
+            const marcarVacia = () => {
+                boton.classList.add("vacia");
+                boton.disabled = true;
+                img.remove();
+            };
+
+            img.addEventListener("error", marcarVacia);
+            if (img.complete && img.naturalWidth === 0) marcarVacia();
+        });
+
+        const visor = $("#visor");
+        const visorImg = visor.querySelector("img");
+        const visorPie = visor.querySelector("figcaption");
+        let ultimoBoton = null;
+
+        document.querySelectorAll(".foto").forEach((boton) => {
+            boton.addEventListener("click", () => {
+                const img = boton.querySelector("img");
+                if (!img) return;
+                ultimoBoton = boton;
+                visorImg.src = img.currentSrc || img.src;
+                visorImg.alt = img.alt;
+                visorPie.textContent = boton.parentElement.querySelector("figcaption").textContent;
+                visor.classList.remove("oculto");
+                document.body.classList.add("bloqueado");
+                visor.querySelector(".cerrar").focus();
+            });
+        });
+
+        function cerrarVisor() {
+            visor.classList.add("oculto");
+            document.body.classList.remove("bloqueado");
+            if (ultimoBoton) ultimoBoton.focus();
+        }
+
+        visor.addEventListener("click", (e) => {
+            if (e.target === visor || e.target.closest(".cerrar")) cerrarVisor();
+        });
+
+        document.addEventListener("keydown", (e) => {
+            if (e.key === "Escape" && !visor.classList.contains("oculto")) cerrarVisor();
+        });
+
+                document.addEventListener("keydown", (e) => {
+            if (e.key === "Escape" && !visor.classList.contains("oculto")) cerrarVisor();
+        });
+
+
+        /* ---------- Música ---------- */
+
+        const musica = $("#musica");
+        const btnMusica = $("#btnMusica");
+        musica.volume = 0.6;
+
+        function actualizarBotonMusica() {
+            const suena = !musica.paused;
+            btnMusica.classList.toggle("pausada", !suena);
+            btnMusica.setAttribute("aria-pressed", suena);
+            btnMusica.setAttribute("aria-label", suena ? "Pausar música" : "Reproducir música");
+        }
+
+        // Empieza al abrir el regalo (el clic permite que el navegador reproduzca audio)
+        $("#abrir").addEventListener("click", () => {
+            // musica.currentTime = 45; // ← quita las // para empezar desde el segundo 45
+            musica.play().catch(() => {});
+            btnMusica.classList.remove("oculto");
+            actualizarBotonMusica();
+        });
+
+        btnMusica.addEventListener("click", () => {
+            musica.paused ? musica.play() : musica.pause();
+        });
+
+        musica.addEventListener("play", actualizarBotonMusica);
+        musica.addEventListener("pause", actualizarBotonMusica);
+
+    </script>
+    </script>
+
+</body>
+</html>
